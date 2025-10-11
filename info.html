@@ -1,0 +1,191 @@
+<!-- <html>
+<head>
+<title> Общая информация </title>
+</head>
+<body>
+<p align="center">
+<a href="index.html">Главная |</a>
+<a href="info.html">Общая информация</a> |
+<a href="history.html">История</a> |
+<a href="film.html">Фильмография</a> |
+<a href="disk.html">Дискография</a> |
+<a href="link.html">Источники</a> </p>
+
+<h1 align=center> Общая информация </h1>
+
+<br><strong>Название:</strong> "The Beatles" ("Битлз";отдельно участников ансамбля называют "битлами")</br>
+<br><strong>Страна:</strong>Великобритания (г.Ливерпуль)</br>
+<br><strong>Годы:</strong> 1960-1970</br>
+<br><strong>Состав группы:</strong>(те, кого весь мир знает как The Beatles): </br>
+
+<ol start="1">
+<li>Джон Леннон(ритм-гитара, соло-гитара, клавишные, бубен, маракасы, бас-гитара, губная гармошка, вокал)</li>
+<li>Пол Маккартни(бас-гитара, клавишные, ударные, гитара, вокал)</li>
+<li>Джордж Харрисон(соло-гитара, ритм-гитара, ситар, бубен, клавишные, вокал)</li>
+<li>Ринго Старр(ударные, ритм-гитара, бубен, маракасы, колоколь, бонги, клавишные, вокал)</li>
+</ol>
+
+<p><br> Также в разное время в составе группы выступали: </P>
+
+<ol start="5">
+<li>Пит Бест(ударные, вокал)</br></li>
+<li>Стюарт Стаклифф(бас-гитара, вокал)</li>
+<li>Джордж Никол(ударные)</li>
+</ol>
+
+<p>После распада группы, произошедшего в 1970 году, каждый из её участников начал сольную карьеру. </p>
+<hr align=center width=50% size=1 color=green><P align=center><FONT face=Arial size=1> ©: Все права защищены.
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Общая информация</title>
+  <link rel="stylesheet" 
+  href="C:\Users\alisk\Documents\Site\style.css">
+  <style>
+    /* Контейнер сетки 2×2 */
+    .members-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 0 10px;
+    }
+    .member-card {
+      background: #7FE9DE;
+      border-radius: 10px;
+      padding: 15px;
+      position: relative;
+      overflow: hidden;
+    }
+    .member-card h3 {
+      margin-bottom: 5px;
+      font-size: 1.1em;
+      color: #003366;
+    }
+    .member-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 10px;
+      object-fit: cover;
+      border: 2px solid #003366;
+    }
+    .member-card p {
+      margin-bottom: 0;
+      font-size: 0.9em;
+      line-height: 1.2em;
+      text-align: justify;
+    }
+    .member-number {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #003366;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .members-grid h2 {
+      grid-column: 1 / -1;
+      background: #400080;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin: 0 -10px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 align="center"><em>Общая информация</em></h1>
+</header>
+
+ <nav>
+  <a href="index.html">Главная</a> |
+  <a href="info.html">Общая информация</a> |
+  <div class="dropdown">
+    <button class="dropbtn">Меню</button>
+    <div class="dropdown-content">
+      <a href="history.html">История</a>
+      <a href="disk.html">Дискография</a>
+      <a href="film.html">Фильмография</a>
+      <a href="links.html">Источники</a>
+      <a href="shop.html">Заказать</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<article class="full-info">
+    <h2>Кратко о группе</h2>
+    <p align="justify">
+      <strong>The Beatles</strong> — британская рок-группа из Ливерпуля, существовавшая с 1960 по 1970 год. 
+      За это время они выпустили 13 студийных альбомов и снялись в нескольких фильмах. 
+      Считаются одной из самых влиятельных групп в истории музыки.
+    </p>
+  </article>
+  <div class="members-grid">
+
+    <h2>Состав группы (те, кого весь мир знает как The Beatles):</h2>
+
+    <div class="member-card">
+      <div class="member-number">1.</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/John_Lennon_1969_%28cropped%29.jpg"
+           alt="Джон Леннон">
+      <h3>Джон Леннон</h3>
+      <p>
+        Джон Леннон (1940–1980) — ритм-гитара, соло-гитара, клавишные, бубен, маракасы, бас-гитара, губная гармошка, вокал.
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="member-number">2.</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Paul_McCartney_2010_%28cropped%29.jpg"
+           alt="Пол Маккартни">
+      <h3>Пол Маккартни</h3>
+      <p>
+        Пол Маккартни (р.1942) — бас-гитара, клавишные, ударные, гитара, вокал.
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="member-number">3.</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/George_Harrison_1974.jpg"
+           alt="Джордж Харрисон">
+      <h3>Джордж Харрисон</h3>
+      <p>
+        Джордж Харрисон (1943–2001) — соло-гитара, ритм-гитара, ситар, бубен, клавишные, вокал.
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="member-number">4.</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Ringo_Starr_1977.jpg"
+           alt="Ринго Старр">
+      <h3>Ринго Старр</h3>
+      <p>
+        Ринго Старр (р.1940) — ударные, ритм-гитара, бубен, маракас, котел — барабан, клавишные, вокал.
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p align="center">
+    <font face="Arial" size="1">&copy; Все права защищены. Алискерова Арина, 2025</font>
+  </p>
+</footer>
+
+</body>
+</html>

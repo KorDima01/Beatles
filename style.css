@@ -1,0 +1,331 @@
+/* Сброс отступов и границ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовые стили */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Шапка, основная часть и подвал */
+header,
+main,
+footer,
+nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* Горизонтальная навигация */
+nav a {
+  margin: 0 10px;
+  color: #1E90FF;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Заголовки */
+h1 em {
+  font-style: italic;
+}
+h1, h2 {
+  color: #4A2BE2;
+  margin-bottom: 10px;
+}
+
+/* Абзацы */
+p {
+  margin-bottom: 10px;
+}
+p[align="justify"] {
+  text-align: justify;
+}
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #000;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    /* Показываем dropdown-content при наведении */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+/* Блок «Кратко о группе» */
+.full-info {
+  background: #400080;    /* насыщенный тёмно-фиолетовый */
+  color: #fff;            /* белый текст */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.full-info h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.full-info p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+
+/* Горизонтальная линия */
+hr {
+  border: none;
+  height: 1px;
+  background: green;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Центрирование изображений */
+figure.center {
+  text-align: center;
+  margin: 10px 0;
+}
+figure.center img {
+  width: 50%;
+}
+
+/* Списки */
+ol, ul {
+  margin: 10px 0 10px 20px;
+}
+ol li, ul li {
+  margin-bottom: 5px;
+}
+
+/* Таблицы */
+table {
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Кнопка «Скачать» */
+.button-style {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #FFFF00;
+  border: 1px solid #000;
+  color: #333;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/* Гамбургер-меню */
+.burger-checkbox {
+  display: none;
+}
+.burger {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  background: #000;
+  border-radius: 2px;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+}
+.burger::before {
+  top: -8px;
+}
+.burger::after {
+  bottom: -8px;
+}
+
+/* Выпадающее меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+  color: #000;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Горизонтальное скролл-меню */
+.scrollmenu {
+  background-color: #333;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 5px 0;
+}
+.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.scrollmenu a:hover {
+  background-color: #777;
+}
+
+/* Панель иконок */
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.icon-bar .active {
+  background-color: #4CAF50 !important;
+}
+
+/* Панорама (info.html) */
+#panorama {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3),
+              0 16px 20px rgba(0,0,0,0.2);
+}
+
+/* Стиль для секций с колонками */
+.textcols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.textcols-item {
+  background: #8A2BE2;
+  color: white;
+  padding: 15px;
+  width: calc(50% - 10px);
+  border: 5px outset #9370DB;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  vertical-align: top;
+}
+
+/* Изображения участников (info.html) */
+img.fig {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Flex-контейнер для дискографии */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inner-div {
+  background-color: #096eeb;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  width: 180px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Очистка float для footer при необходимости */
+footer {
+  clear: both;
+}
